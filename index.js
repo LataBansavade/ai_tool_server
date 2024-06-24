@@ -34,7 +34,7 @@ app.use(express.json())
 //CORS Middleware
 const corsMiddleware = (req, res, next) => {
     // res.setHeader('Access-Control-Allow-Origin', 'https://aifusion-project-final.vercel.app');
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+    res.setHeader('Access-Control-Allow-Origin', 'https://ai-tool-client.vercel.app/');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
     res.setHeader('Access-Control-Allow-Credentials', true);
