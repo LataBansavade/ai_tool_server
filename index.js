@@ -25,7 +25,7 @@ const store = new mongoDbSession({
 // middleware
 
 app.use(cors({
-    origin: 'https://ai-tool-client.vercel.app/', // Allow requests from this origin
+    origin: 'https://ai-tool-client.vercel.app', // Allow requests from this origin
     credentials: true // Allow credentials (cookies, authorization headers, etc.)
 }));
 app.use(express.urlencoded({ extended: true })); 
@@ -34,7 +34,7 @@ app.use(express.json())
 //CORS Middleware
 const corsMiddleware = (req, res, next) => {
     // res.setHeader('Access-Control-Allow-Origin', 'https://aifusion-project-final.vercel.app');
-    res.setHeader('Access-Control-Allow-Origin', 'https://ai-tool-client.vercel.app/');
+    res.setHeader('Access-Control-Allow-Origin', 'https://ai-tool-client.vercel.app');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
     res.setHeader('Access-Control-Allow-Credentials', true);
